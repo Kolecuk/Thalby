@@ -169,7 +169,7 @@ h2 {
 	color: rgba(0, 0, 0, 1);
 }
 
-.bestsellers__disciption {
+.bestsellers__description {
 	max-width: 632px;
 	padding: 27px 0 47px;
 	font-family: 'Roboto-Regular', sans-serif;
@@ -286,7 +286,7 @@ h2 {
 	height: 525px;
 }
 
-.guides__item-disciption {
+.guides__item-description {
 	max-width: 498px;
 	display: flex;
 	flex-direction: column;
@@ -335,7 +335,7 @@ h2 {
 	width: 100%;
 }
 
-.guides__item:nth-child(2) .guides__item-disciption {
+.guides__item:nth-child(2) .guides__item-description {
 	align-items: end;
 	order: -1;
 }
@@ -344,7 +344,77 @@ h2 {
 	text-align: end;
 }
 
+.features {
+	padding: 190px 0 112px;
+	background-color: rgba(255, 255, 255, 1);
+}
 
+.features__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 597px;
+}
+
+.features__text {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 3.6rem;
+	max-width: 450px;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+}
+
+.features__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	row-gap: 110px;
+}
+
+.features__list-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 338px;
+	height: 168px;
+}
+
+.features__list-circle {
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background-color: rgba(33, 247, 236, 1);
+}
+
+.features__list-discription {
+	font-family: 'Roboto-Bold', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+}
+
+.features__list-item:nth-child(2) .features__list-circle {
+	background-color: rgba(51, 211, 188, 1);
+}
+
+.features__list-item:nth-child(3) .features__list-circle {
+	background-color: rgba(24, 165, 198, 1);
+}
+
+.features__list-item:nth-child(4) .features__list-circle {
+	background-color: rgba(211, 143, 98, 1);
+}
+
+.features__list-item:nth-child(5) .features__list-circle {
+	background-color: rgba(249, 76, 67, 1);
+}
+
+.features__list-item:nth-child(6) .features__list-circle {
+	background-color: rgba(211, 153, 255, 1);
+}
 
 /* .wrapper:nth-child(2) {
 	background-color: rgba(240, 239, 235, 1);
