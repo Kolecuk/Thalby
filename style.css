@@ -264,8 +264,9 @@ h2 {
 	top: 652px;
 	left: 0px;
 	background-color: rgba(204, 204, 204, 0.6);
-	z-index: -1;
 }
+
+/* не совсем верный цвет из-за наложения полупрозрачного цвета, т.е. нижний цвет просвечивается */
 
 .guides__wrapper {
 	display: flex;
@@ -317,7 +318,7 @@ h2 {
 	text-decoration-skip-ink: none;
 	border-style: none;
 	color: rgba(0, 0, 0, 1);
-	background-color: rgba(204, 204, 204, 0.0);
+	background-color: rgba(0, 0, 0, 0);
 	transition: 0.5s linear;
 }
 
@@ -333,6 +334,7 @@ h2 {
 	align-self: end;
 	max-width: 933px;
 	width: 100%;
+	z-index: 1;
 }
 
 .guides__item:nth-child(2) .guides__item-description {
@@ -416,6 +418,105 @@ h2 {
 	background-color: rgba(211, 153, 255, 1);
 }
 
-/* .wrapper:nth-child(2) {
-	background-color: rgba(240, 239, 235, 1);
-} */
+.interviews {
+	padding: 52px 0;
+	background-color: rgba(255, 255, 255, 1);
+	position: relative;
+}
+
+.interviews::after {
+	content: '';
+	position: absolute;
+	height: 480px;
+	width: 100%;
+	top: 427px;
+	left: 0px;
+	background-color: rgba(204, 204, 204, 0.6);
+}
+
+.interviews__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.interviews__wrapper > h2 {
+	max-width: 705px;
+	text-align: center;
+}
+
+.interviews__example {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 102px;
+	z-index: 1;
+}
+
+.interviews__example-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	max-width: 288px;
+}
+
+.interviews__item-image {
+	width: 100%;
+	padding-bottom: 35px;
+}
+
+.interviews__item-text {
+	padding-bottom: 34px;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-size: 2.4rem;
+	text-align: center;
+	letter-spacing: 0.6px;
+	color: rgba(0, 0, 0, 1);
+}
+
+.interviews__example-item:first-child .interviews__item-text {
+	font-size: 2.2rem;
+	max-width: 248px;
+	padding-bottom: 40px;
+}
+
+.interviews__example-item:nth-child(2) .interviews__item-text {
+	max-width: 272px;
+}
+
+.interviews__item-name {
+	max-width: 251px;
+	padding-bottom: 44px;
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+}
+
+.interviews__item-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 85px;
+	height: 20px;
+	border-radius: 10px;
+	padding: 0 5px;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-size: 1.8rem;
+	text-decoration: underline 1px;
+	text-underline-offset: 2px;
+	border-style: none;
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(0, 0, 0, 0);
+	transition: 0.5s linear;
+}
+
+.interviews__item-button:hover {
+	color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
+	text-shadow: 1px 1px 2px rgba(24, 165, 198, 1);
+	box-shadow: 3px 3px 5px rgba(24, 165, 198, 1);
+	text-decoration-color: rgba(0, 0, 0, 0.1);
+}
